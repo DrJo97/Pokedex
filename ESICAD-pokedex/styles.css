@@ -130,3 +130,9 @@ footer {
 .text-center {
   text-align: center;
 }
+thead {
+  text-align: center;
+}
+tbody {
+  text-align: center;
+}

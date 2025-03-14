@@ -21,7 +21,7 @@ require_once("database-connection.php");
 
     $pokemon = $databaseConnection->query($sql)->fetch_all(MYSQLI_ASSOC);
     foreach ($pokemon as $row) {
-        echo "<tr><td>" . $row["idPokemon"] . "</td><td>" . $row["nomPokemon"] . "</td><td><img src='" . $row["urlPhoto"] . "'/></td></tr>";
+        echo "<tr><td>" . $row["idPokemon"] . "</td><td><td><a href='infos.php?id=" . $row["idPokemon"] . "'>" . $row["nomPokemon"] . "</a></td>" . "</td><td><img src='" . $row["urlPhoto"] . "'/></td></tr>";
     }
 
     ?>
